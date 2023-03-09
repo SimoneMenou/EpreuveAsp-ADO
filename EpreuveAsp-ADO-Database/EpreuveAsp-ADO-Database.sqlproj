@@ -59,6 +59,13 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Client.sql" />
+    <Build Include="Proprietaire.sql" />
+    <Build Include="Notes.sql" />
+    <Build Include="Reservation.sql" />
+    <Build Include="Logement.sql" />
+    <Build Include="CategorieLogement.sql" />
+    <Build Include="Photo.sql" />
+    <Build Include="Indisponibilites.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="EpreuveAsp-ADO-Database.refactorlog" />

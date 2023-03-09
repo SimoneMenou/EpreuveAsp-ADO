@@ -1,12 +1,11 @@
 ﻿CREATE TABLE [dbo].[Client]
 (
-	[IdClient] INT NOT NULL PRIMARY KEY, 
-    [Nom] NVARCHAR(50) NULL, 
-    [Prenom] NVARCHAR(50) NULL, 
-    [AdresseMail] NCHAR(255) NULL,
-    [MotDePasse] NVARCHAR(MAX) NULL, 
-    [Pays] NVARCHAR(50) NULL, 
-    [Telephone] NCHAR(10) NULL, 
-   
-    
+	[IdClient] INT PRIMARY KEY NOT NULL IDENTITY, 
+    [Nom] NVARCHAR(50) NOT NULL, 
+    [Prenom] NVARCHAR(50) NOT NULL, 
+    [AdresseMail] NVARCHAR(50) NOT NULL,
+    [MotDePasse] NVARCHAR(MAX) NOT NULL, 
+    [Pays] NVARCHAR(50) NOT NULL, 
+    [Telephone] NCHAR(10) NOT NULL, 
+
 )

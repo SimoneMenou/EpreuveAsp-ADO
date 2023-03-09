@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[Logement]
+(
+	[IdLogement] INT PRIMARY KEY NOT NULL IDENTITY, 
+    [Nom] NCHAR(10) NOT NULL, 
+    [Description courte] NCHAR(10) NOT NULL, 
+    [Description longue] NCHAR(10) NULL, 
+    [Chambrenb] INT NOT NULL, 
+    [Salledebainnb] INT NOT NULL, 
+    [WCnb] INT NOT NULL, 
+    [Piecenb] INT NOT NULL, 
+    [Photo ] NVARCHAR(50) NOT NULL, 
+    [MaxPersonne ] INT NOT NULL, 
+    [Balcon ] BOOLEAN NOT NULL, 
+    [Wifi ] BOOLEAN NOT NULL, 
+    [MiniBar]BOOLEAN NOT NULL, 
+    [AnimauxAdmis] BOOLEAN NOT NULL, 
+    [Piscine ]BOOLEAN NOT NULL, 
+    [Voiturier ] BOOLEAN NOT NULL, 
+    [RoomService] BOOLEAN NOT NULL, 
+    CONSTRAINT [FK_Indisponibilite_ToTable] FOREIGN KEY ([Column]) REFERENCES [ToTable]([ToTableColumn]), 
+    CONSTRAINT [FK_Proprietaire_ToTable_1] FOREIGN KEY ([Column]) REFERENCES [ToTable]([ToTableColumn]),
+)
