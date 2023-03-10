@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EpreuveAsp-ADO-Database", "EpreuveAsp-ADO-Database\EpreuveAsp-ADO-Database.sqlproj", "{6E1F5B23-A531-4AAD-B58F-9F3671632EF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Travel-MVC", "Exo-Travel-MVC\Exo-Travel-MVC.csproj", "{9F792372-3D2F-453E-834B-ABEEC454D0B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Travel-MVC", "Exo-Travel-MVC\Exo-Travel-MVC.csproj", "{9F792372-3D2F-453E-834B-ABEEC454D0B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Travel-DAL", "Exo-Travel-DAL\Exo-Travel-DAL.csproj", "{DD86503C-D548-4897-AFE3-3038A9CB86D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Travel-DAL", "Exo-Travel-DAL\Exo-Travel-DAL.csproj", "{DD86503C-D548-4897-AFE3-3038A9CB86D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Travel-BLL", "Exo-Travel-BLL\Exo-Travel-BLL.csproj", "{66647778-D525-44BD-A37C-C3DF0894B44E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{DD86503C-D548-4897-AFE3-3038A9CB86D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD86503C-D548-4897-AFE3-3038A9CB86D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD86503C-D548-4897-AFE3-3038A9CB86D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66647778-D525-44BD-A37C-C3DF0894B44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66647778-D525-44BD-A37C-C3DF0894B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66647778-D525-44BD-A37C-C3DF0894B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66647778-D525-44BD-A37C-C3DF0894B44E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,4 +5,15 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @model Exo_Travel_MVC.Models.ModelClient
+
+    <h1>Informations client</h1>
+
+    <ul>
+        <li>Nom : @Model.Nom</li>
+        <li>Prénom : @Model.Prenom</li>
+        <li>Adresse e-mail : @Model.AdresseMail</li>
+        <li>Pays : @Model.Pays</li>
+        <li>Téléphone : @Model.Telephone</li>
+    </ul>
 </div>

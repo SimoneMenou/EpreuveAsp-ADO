@@ -5,4 +5,8 @@
     <RootNamespace>Exo_Travel_MVC</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Exo-Travel-BLL\Exo-Travel-BLL.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -17,7 +17,10 @@ namespace Exo_Travel_DAL
         public static Client Toclient(this IDataRecord record)
         {
             //Gerer la non gestion de donné si il n'y a rien a "record"
-
+            if (record is null)
+            {
+                return null;
+            }
 
             return new Client()
             {
@@ -26,9 +29,9 @@ namespace Exo_Travel_DAL
                 Nom = (string)record[nameof(Client.Nom)],
                 Prenom = (string)record[nameof(Client.Prenom)],
                 AdresseMail = (string)record[nameof(Client.AdresseMail)],
-                MotDePasse = (string)record[nameof(Client.MotDePasse)],
+                MotDePasse = "******",
                 Pays = (string)record[nameof(Client.Pays)],
-                Telephone = (string)record[nameof(Client.Telephone)],
+                Telephone = (string)record[nameof(Client.Telephone)]
             };
       
 
