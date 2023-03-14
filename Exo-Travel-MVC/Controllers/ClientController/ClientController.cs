@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Exo_Travel_BLL.Entities;
+using Exo_Travel_BLL.Services;
+using Exo_Travel_common.Repository;
+using Exo_Travel_MVC.Handlers;
+using Exo_Travel_MVC.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,11 +14,18 @@ namespace Exo_Travel_MVC.Controllers.ClientController
 {
     public class ClientController : Controller
     {
-        private readonly BLLService.ClientService _clientService;
+        private readonly IClientRepository<Client, int> _clientService; 
+
+        public ClientController(IClientRepository<Client, int> clientService)
+        {
+            _clientService = clientService; 
+        }
+
         // GET: ClientController
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<ModelClient> model = _clientService.Get().Select(e => e.ToModelClient());
+            return View(model);
         }
 
         // GET: ClientController/Details/5

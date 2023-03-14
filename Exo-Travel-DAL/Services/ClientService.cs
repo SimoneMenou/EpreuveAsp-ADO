@@ -8,18 +8,20 @@ using Exo_Travel_DAL;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exo_Travel_common.Repository;
 
-namespace Exo_Travel_DAL.Services
+namespace Exo_Travel_DAL.BLLService
 {
     //Ici on va pouvoir recevoir les infos du client c'est un service rendu par cette classe
     //C'est ici qu'on met nos fonctionalités CRUD 
     //creer 
     //lire 
     //effacer
-   public class ClientService
+   public class ClientService : IClientRepository<Client, int>
+
     {
         //Pour pouvoir traiter ces données il faut une connexion 
-        private string ConnectionString { get; set; } = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Eco-Travel-DB;Integrated Security=True";
+        private string ConnectionString { get; set; } = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EcoTravel;Integrated Security=True";
 
         // je souhaite récupérer tout les clients 1ere methode 
         // Plusieurs methodes 
@@ -132,4 +134,4 @@ namespace Exo_Travel_DAL.Services
             }
         }
     }
-}
+

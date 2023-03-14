@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Travel-MVC", "Exo-Trave
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Travel-DAL", "Exo-Travel-DAL\Exo-Travel-DAL.csproj", "{DD86503C-D548-4897-AFE3-3038A9CB86D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Travel-BLL", "Exo-Travel-BLL\Exo-Travel-BLL.csproj", "{66647778-D525-44BD-A37C-C3DF0894B44E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Travel-BLL", "Exo-Travel-BLL\Exo-Travel-BLL.csproj", "{66647778-D525-44BD-A37C-C3DF0894B44E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Travel-common", "Exo-Travel-common\Exo-Travel-common.csproj", "{B71EAB31-F508-42AF-86B2-6C900E816D1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{66647778-D525-44BD-A37C-C3DF0894B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66647778-D525-44BD-A37C-C3DF0894B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66647778-D525-44BD-A37C-C3DF0894B44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71EAB31-F508-42AF-86B2-6C900E816D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71EAB31-F508-42AF-86B2-6C900E816D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71EAB31-F508-42AF-86B2-6C900E816D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71EAB31-F508-42AF-86B2-6C900E816D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

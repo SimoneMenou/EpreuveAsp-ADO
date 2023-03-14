@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exo_Travel_common.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace Exo_Travel_DAL.Entities
 {
     //Dans ma dal mes tables devienne des classes et mes champs des propriétés (colonne) spécifié le type en commentaire peut s'averer pratique 
-   public class Client
+   public class Client : IClient
     {
         public int IdClient { get; set;}
         //nvarchar(50)

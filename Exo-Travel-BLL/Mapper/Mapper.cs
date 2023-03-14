@@ -19,6 +19,7 @@ namespace Exo_Travel_BLL
 
                 IdClient = entity.IdClient,
                 Nom = entity.Nom,
+                Prenom = entity.Prenom,
                 AdresseMail = entity.AdresseMail,
                 MotDePasse = entity.MotDePasse,
                 Pays = entity.Pays,
@@ -34,6 +35,7 @@ namespace Exo_Travel_BLL
 
                 IdClient = entity.IdClient,
                 Nom = entity.Nom,
+                Prenom = entity.Prenom,
                 AdresseMail = entity.AdresseMail,
                 MotDePasse = entity.MotDePasse,
                 Pays = entity.Pays,

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Exo-Travel-common\Exo-Travel-common.csproj" />
     <ProjectReference Include="..\Exo-Travel-DAL\Exo-Travel-DAL.csproj" />
   </ItemGroup>
 

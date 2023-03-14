@@ -1,4 +1,6 @@
 ﻿using Exo_Travel_BLL.Entities;
+using DALEntities = Exo_Travel_DAL.Entities;
+using Exo_Travel_common.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,17 +10,24 @@ using System.Threading.Tasks;
 namespace Exo_Travel_BLL.Services
 {
     //Ce service propre au bll communique avec le service 
-   public class ClientService
+   public class ClientService: IClientRepository<Client , int >
     {
         //Recuperer les infos de la dal avec un nouveau crud propre au bll 
         //bll est dépendant de la dal pour a son tour traiter les données
         // je vais creer le chemin de la dépendance (class de la dal doit être public pour l'accés)
-        public Exo_Travel_DAL.Services.ClientService _repository;
+        //public Exo_Travel_DAL.BLLService.ClientService _repository;
 
-        public ClientService()
+        //public ClientService()
+        //{
+        //    _repository = new Exo_Travel_DAL.BLLService.ClientService();
+        //    // pour creer le lien instancier la dal 
+        //}
+
+        private readonly IClientRepository<DALEntities.Client, int> _repository;
+        public ClientService (IClientRepository<DALEntities.Client, int> repository)
         {
-            _repository = new Exo_Travel_DAL.Services.ClientService();
-            // pour creer le lien instancier la dal 
+            _repository = repository;
+
         }
         public IEnumerable<Client> Get()
         {
